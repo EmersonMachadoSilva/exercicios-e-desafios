@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex003/favicon.ico" type="image/x-icon">
+    <title>Vídeos e tambs</title>
+</head>
+<body>
+<h1>Vamos colocar alguns vídeos em nosso site!</h1> 
+    <video autoplay controls loop muted type="video/mp4" width="200"><!-- o media types "type" não é de extrema necessidade, pois o arquivo colocado é padrão do navegador (mp4) -->
+        <source src="arquivos/meuvideo.1080p.mp4" type="video/mp4">
+        <source src="arquivos/meuvideo.750p.mp4" type="video/mp4">
+        <p>O seu navegador não suporta este tipo de arquivo, <a href="arquivos/meuvideo.750p.mp4"></a>clique aqui para baixá-lo!</p>
+    </video> 
+<h1>Agora vamos inserir um vídeo de links externos, sem a necessidade de instalação e de hospedagem:</h1> 
+<!-- tomando sempre o cuidado dos direitos autorais, o youtube neste sentido, é um ponto muito fraco. -->
+    <p>podemos utilizar os sites como exemplo: <strong>youtube</strong>:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+    <p>também podemos fazer o mesmo em outros sites, com pontos fortes, e fracos, por exemplo o <strong>Vimeo</strong>, com mais qualidade:</p>
+    <iframe src="https://player.vimeo.com/video/8706167?h=000a061aef&autoplay=1&loop=1&color=ff0004&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/8706167"></a><a href="https://vimeo.com/danielklug">
+
+        <!-- o site ficou lento, mas sem problemas com hospedagem nestes dois ultimos casos, pois a hospedagem está nos próprios sites, e ai está outro problema, se o vídeo sair do ar, os vídeos do site vai dar erro. -->
+</body>
+</html>

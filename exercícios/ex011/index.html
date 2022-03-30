@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Imagens e Áudios</title>
+</head>
+<body>
+<h1>Vamos criar uma imagem que se adapta sozinha com o tamanho do site!</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+
+        <source media="(max-width: 1000px)" srcset="imagens/img-m.png" type="image/png"> 
+
+        <img src="imagens/img-g.png" alt="imagem flexível">
+    </picture>
+<!-- aqui criamos uma imagem que se adequa ao tamanho que o site é visualizado, se o site for menos que (tamanho da imagem) ele irá carregar a imagem (nome do arquivo da imagem) -->
+<br>
+<h2>vamos criar outro exemplo utilizando o "min"</h2>
+<picture>
+    <source media="(min-width: 1000px)" srcset="imagens/img-g.png" type="image/png">
+
+    <source media="(min-width: 750px)" srcset="imagens/img-m.png" type="image/png">
+
+    <img src="imagens/img-p.png" alt="imagem flexível">
+</picture>
+<!-- ao utilizar o "min" no caso seria ao contrário do exemplo anterior, a imagem a ser carregada é a menor do exemplo. --> 
+
+<br><h1>Agora colocaremos um estilo de áudio por mp3 em nosso site:</h1>
+
+<audio src="midia/2 - Desenvolvendo Amor - Morada(MP3_128K).mp3" autoplay controls loop preload="metadata" > 
+
+    <!-- acima está alguns parâmetros para a reprodução do áudio, o "autoplay" não funciona em alguns navegadores, é o play automático do áudio. os "controls" é a opção de play no site. "preload" é como o áudio vai ser carregado no site, sendo "metadata" carrega as informações do áudio, o "auto" carrega todas as informações, não somente do site mas do audio para que depois execute, e o "none" que não carrega nada, somente quando o usuário apertar o play. -->
+
+<audio src="midia/CLOVIS PINHO - DESISTIR JAMAIS(MP3_128K).mp3" controls loop ></audio>
+<p>se o áudio não carregar, o navegador aparecerá esta mensagem dando o aviso para talvez <a href="midia/2 - Desenvolvendo Amor - Morada(MP3_128K).mp3">baixar o arquivo</a></p>
+
+</audio>
+
+
+</body>
+</html>

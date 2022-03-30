@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* vamos criar um seletor para configurações específicas usando o class em html e . em css*/
+body{
+    background-image: linear-gradient(to top, #F077F2, #970FF2, #611DF2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ppp{
+    background-color: #601df29c;
+    text-align: center;
+    padding: 10px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 10px 10px 7px #611DF2;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+h1{
+    color: #F077F2;
+    text-align: right;
+    text-shadow: 3px 3px 3px black;
+}
+
+.texto{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.basico{
+    color: rgba(0, 128, 0, 0.849);
+    text-shadow: 3px 3px 3px black;
+}
+
+.inter{
+    color: rgba(255, 255, 0, 0.61);
+    text-shadow: 3px 3px 3px black;
+}
+
+.avancado{
+    color: rgba(255, 0, 0, 0.623);
+    text-shadow: 2px 2px 2px black;
+}

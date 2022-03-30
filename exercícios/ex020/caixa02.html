@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags semânticas</title>
+    <style>
+        body{
+            background-color: rgb(114, 112, 112);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
+        }
+        div > p{
+            display: none;
+        }
+        div > h1 :hover { 
+            content: '⚽ '
+
+        }
+        header{
+            background-color: rgb(194, 192, 192);
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            height: 150px;
+        }
+        nav{
+            background-color:  rgb(80, 80, 80);;
+            padding: 15px;
+            margin: -10px 0px 15px 0px;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+            /* para sombras utilizamos o box-shadow, e no exemplo, um shorthand */
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            
+            
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        section{
+            background-color: rgb(194, 192, 192);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.521);
+            border-radius: 10px 0px;
+            /* usando um shorthand para fazer um arredondamento da borda na caixa. Ordem:(esqueda-cima, direita-cima, direita-baixo, esquerda-baixo) */
+        }
+        footer > p{
+            margin: 0px;
+        }
+        .ordem{
+            text-align: justify;
+            font-size: 18px;
+        }
+        .ordem::before{
+            content: '♠ ';
+        }
+        h2::before{
+            content: '♣ ';
+        }
+        h1{
+            background-color: white;
+            padding: 10px;
+            margin: 10px 0px 10px 0px;
+        }
+        #text{
+
+            padding-top: 10px;
+            margin: -15px 0px 10px 0px;
+        }
+        aside{
+            font-weight: bold;
+        }
+        div#bola{
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50px;
+            outline: 3px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tags semânticas (com significados) facilitam na forma de identificação para a modificação em CSS-->
+
+    <article>
+        <header>
+            <div>
+                <h1>Esportes e notícias</h1>
+                <p>⚽</p>
+            </div>
+            <nav>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+            </nav>
+        </header>
+    </article>
+    <main>
+        <section id="text">
+            <h2>Primeiro lugar da competição</h2>
+            <article>
+                <p class="ordem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum reiciendis odit, modi, eaque illum recusandae incidunt assumenda veritatis id suscipit ex repellendus ullam a molestias magni ut, quam molestiae.</p>
+            </article>
+            <p class="ordem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam laboriosam facere accusamus odio adipisci illo ad ullam eos, quasi dicta beatae facilis laborum ipsum aut laudantium? Corrupti, deserunt reiciendis.</p>
+            <aside>
+                <p>-Artigo escrito por José da Silva</p>
+            </aside>
+        </section>
+        <section id="text">
+                <h2>Guerra mundial paralisa o mundo</h2>
+                <article>
+                    <p class="ordem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, doloremque? Corrupti reiciendis quos labore delectus maiores similique laboriosam impedit ex a blanditiis dolorum molestias adipisci rem dignissimos, quo veniam. Labore?</p>
+                </article>
+                <aside>
+                    <p>-Artigo produzido por Vitória K.</p>
+                </aside>
+        </section>
+    </main>
+    <br>
+        <footer>
+            <p>Produzido por Emerson Doctorplays</p>
+            <br>
+        </footer>
+        <div id="bola">
+        </div>
+</body>
+</html>

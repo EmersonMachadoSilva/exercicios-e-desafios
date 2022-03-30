@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+body{
+    background-image: linear-gradient(to left, #F2B138,#F2A03D);
+}
+
+main{
+    background-color: #fdd8aa83;
+    margin: auto; /* centraliza a ferramenta selecionada no meio da tela "auto", independente do tamanho.*/
+    position: absolute; bottom: 175px; right: 175px;
+    padding: 10px; /* ajusta o espaceamento do item selecionado, no caso o background color, em que ajusta o quadrado no site.*/
+    width: 1000px; /* ajusta o tamanho do quadrado, "background color" */
+    border-radius: 20px; /* arredonda a borda do quadrado*/
+    box-shadow: 10px 10px 10px #F2A03D; 
+    /* adiciona sombra*/
+    
+}
+h1{
+    text-align: center;    
+    color: #D9593D;
+    text-shadow: 1px 1px 1px #9b422e;
+}    
+h2{
+    color: #34B1BF;
+    text-shadow: 1px 1px 1px #1c6068;
+}
+p{
+    text-align: justify;
+}
+
+img{
+    position: center;
+}

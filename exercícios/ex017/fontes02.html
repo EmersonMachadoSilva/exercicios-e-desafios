@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de fontes</title>
+    <link rel="shortcut icon" href="../ex015/Creeper-icon.ico" type="image/x-icon">
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    @font-face {
+        src: url('Pokemon\ Hollow.ttf')
+        format('truetype'); /* tipos de format: truetype-ttf / opentype-otf, etc */
+        font-family: 'pokemon';
+        font-weight: normal;
+        font-style: normal; (ou)
+        font: normal normal 2em 'pokemon' /* font-style,font-weight,font-size,font-family */
+    }
+   /* aqui usamos 2 tipos de fontes externas, as "import" foram fontes não baixadas, já as "font-face" são fontes baixadas em arquivos, no caso a "pokemon" em que elas só funcionam na parte de cima do código, conforme as configurações lidas */
+
+    h1, h2 {
+        font-family: 'pokemon';
+        font-weight: bold;
+    }
+    a{
+        font-family: 'pokemon';  
+        font-weight: bold;
+    }
+    p{
+        font: normal lighter 1.3em 'Press Start 2P';
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Exemplo de Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, delectus inventore. Repudiandae suscipit, maxime omnis deserunt quidem, magni possimus deleniti qui reiciendis, dicta id dolores est consequuntur voluptate ducimus quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore quia placeat reiciendis architecto, ut ipsa mollitia quidem assumenda ducimus totam repellat at omnis beatae laboriosam nesciunt corrupti veniam repudiandae.</p>
+    <h2>Exemplo de Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tempore sint iure provident molestias ipsam debitis dolores laudantium fugit! Impedit officia labore veniam obcaecati nemo assumenda harum porro iste vero.</p>
+<br>
+    <p><a href="fontes01.html"> PÁGINA 01</a></p>
+</body>
+</html>
