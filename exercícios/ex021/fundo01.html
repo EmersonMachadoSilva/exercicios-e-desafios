@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens de fundo</title>
+    <style>
+        body{
+            background-image: url('imagens/pattern004.png');
+        }
+
+        div.fundo{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        div#q1{
+            background-color: rgba(135, 207, 235, 0.781);
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.884), rgba(36, 207, 36, 0.836)) ;
+        }
+        div#q3{
+            background-image: url('imagens/pattern003.png');
+        }
+        /* aqui criamos um exemplo de fundos de imagens, mais para relembrar e utilizar o novo método de colocar as imagens em bloco*/
+
+        div#q4{
+            background-image: url('imagens/wallpaper002.jpg');
+        }
+        /* acima um exemplo de como imagens grandes são carregadas (div q4) */
+        
+    </style>
+</head>
+<body>
+    <!-- as imagens são carregadas por padrão do tamanho que elas são (algumas vezes elas repetem a mesma imagem uma do lado da outra para preencher o tamanho)-->
+
+    <div class="fundo" id="q1" >
+
+    </div>
+
+    <div  class="fundo" id="q2">
+
+    </div  >
+
+    <div class="fundo" id="q3">
+
+    </div>
+    <div class="fundo" id="q4">
+
+    </div>
+</body>
+</html>

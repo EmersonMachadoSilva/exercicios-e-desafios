@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando posições da imagem</title>
+    <style>
+        div.img{
+            background-image: url('imagens/wallpaper003.jpg');
+            background-size: 180vh;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        div#q1{
+            background-position: left top;
+        }
+        div#q2{
+            background-position: right center;
+        }
+        div#q3{
+            background-position: left bottom;
+        }
+        div#q4{
+            background-position: center center;
+        }
+    </style>
+
+</head>
+<body>
+    <p>posição left-top:</p>
+    <div class="img" id="q1"></div>
+
+    <p>posição right-center:</p>
+    <div class="img" id="q2"></div>
+
+    <p>posição left-bottom:</p>
+    <div class="img" id="q3"></div>
+
+    <p>posição center-center:</p>
+    <div class="img" id="q4"></div>
+</body>
+</html>
