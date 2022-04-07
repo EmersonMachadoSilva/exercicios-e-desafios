@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixas</title>
+    <style>
+        #conteiner{
+            position: relative;
+            background-color: skyblue;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100% ;
+            height: 97vh;
+        }
+        #conteudo{
+            position: relative;
+            background-color: yellow;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            height: 200px;
+            width: 400px;
+
+            /*o termo absolute nos da a opção de configurar a left e top da imagem, mas é preciso que a div pai esteja configurada em position:relative*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /*por padrão, ela é baseada em seu ponto de esquerda e cima, ou left-top e é ai que entra as porcentagens, e a trasnformação para translate*/
+
+
+            transform: translate(-50%,  -50%);
+            /*nesta ocasião, tivemos que transformar a imagem para que possamos movimentá-la dentro da div que ela está, sendo o objetivo colocá-la no centro, utilizamos as porcentagens -50% horizontal e os outros -50% para vertical */
+
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <main id="conteudo">
+
+        </main>
+    </section>
+</body>
+</html>

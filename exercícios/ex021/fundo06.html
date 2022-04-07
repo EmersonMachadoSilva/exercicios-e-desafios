@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de versatilidade da imagem</title>
+    <style>
+        body{
+            /* vamos aprender sobre mais algumas configurações do background: 
+            -size: cover(exibe em 100% da viewport), contain (exibida em 100%, sem cortes, mas não em 100% da viewport-vh)
+
+            -attachment: significa vínculo, ou seja, como a imagem ficará no fundo, sendo o padrão em scrol (rolante), e no caso, colocaremos fixa.
+
+            detalhe: é importante mesmo que esteja a imagem, se preocupar em colocar o fundo de uma cor da palheta de cores, pois o servidor pode estar lento e não carregar a imagem a tempo, assim carregará a cor escolhida.
+            */
+
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*também temos a possibilidade de itilizar a shorthand do background, ordem: 
+            color > image > position > repeat > [size] não funciona na prática > attachment
+            ;*/
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat center/cover fixed;
+            
+        }
+        main{
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 10px 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis odit tempora tempore corrupti, aliquam aliquid porro consectetur dolorem, error nihil laudantium labore quisquam expedita assumenda, eligendi quaerat est magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vero, impedit fugiat totam dignissimos, exercitationem maxime labore dicta numquam nesciunt laboriosam itaque ipsa? Eveniet quo provident sed et corporis quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid, sint cum nisi enim numquam sequi id quibusdam impedit ut ea cupiditate deleniti minus omnis et eveniet reprehenderit sit ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit voluptatibus quas vero consequuntur. Officia ipsam, error rerum, quo enim molestiae molestias autem at modi voluptates architecto aliquam repellat iste ipsa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis odit tempora tempore corrupti, aliquam aliquid porro consectetur dolorem, error nihil laudantium labore quisquam expedita assumenda, eligendi quaerat est magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vero, impedit fugiat totam dignissimos, exercitationem maxime labore dicta numquam nesciunt laboriosam itaque ipsa? Eveniet quo provident sed et corporis quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid, sint cum nisi enim numquam sequi id quibusdam impedit ut ea cupiditate deleniti minus omnis et eveniet reprehenderit sit ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit voluptatibus quas vero consequuntur. Officia ipsam, error rerum, quo enim molestiae molestias autem at modi voluptates architecto aliquam repellat iste ipsa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis odit tempora tempore corrupti, aliquam aliquid porro consectetur dolorem, error nihil laudantium labore quisquam expedita assumenda, eligendi quaerat est magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vero, impedit fugiat totam dignissimos, exercitationem maxime labore dicta numquam nesciunt laboriosam itaque ipsa? Eveniet quo provident sed et corporis quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid, sint cum nisi enim numquam sequi id quibusdam impedit ut ea cupiditate deleniti minus omnis et eveniet reprehenderit sit ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit voluptatibus quas vero consequuntur. Officia ipsam, error rerum, quo enim molestiae molestias autem at modi voluptates architecto aliquam repellat iste ipsa.</p>
+    </main>
+</body>
+</html>
