@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            /* collapse- junta-se as bordas, o padrão é separate*/
+            background-color: skyblue;
+            width: 500px;
+            height: 500px;
+        }
+        td{
+            border: 1px solid black;
+            /*alinhamento das tabelas*/
+            text-align: right;
+            vertical-align: top;
+            /*text-align(horizontal) 
+            vertical-align(vertical)*/
+        }
+        tr.linha{
+            background-color: rgba(85, 83, 83, 0.685);
+        }
+        td.dado{
+            background-color: white;
+        }
+    </style>
+    <!--podemos fazer tabelas em HTML, como demonstrado abaixo uma tabela simples.-->
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+<!--Hierarquia de Tabelas:
+-Table (tabela)
+  -Table Row (linha da tabela)  TR  
+    -Table Header (cabeçalho da tabela)TH
+      -Table Data (dados da tabela) TD  
+-->
+    <table>
+        <tr class="linha">
+            <td>A1
+            <td>B1
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="dado">C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+        </tr>
+    </table>
+
+</body>
+</html>

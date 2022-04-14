@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com Dados</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin-top: 40px;
+            border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 15px;
+        } 
+        caption{
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: lightskyblue;
+            padding: 10px;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightcyan;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightblue;
+        }
+        .produto{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <!-- é necessário utilizar os escopos "scope" para trazer significado ao navegador, para que ele reconheça oque é cada informação, OS ESCOPOS SÓ SÃO UTILIZADOS EM TH-->
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+    <tbody>
+            <tr>
+                <th scope="rowgrup" class="produto" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" class="produto" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+    </tbody>
+    </table>
+
+    <p style="margin-top: 150px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia accusantium vitae corporis eaque nulla sit! Harum provident minima saepe quidem voluptatum maxime, maiores reiciendis quaerat adipisci vero nisi. Delectus, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga atque eveniet odit nostrum repellendus tenetur perferendis, nulla expedita libero accusantium? Ipsa sed, ullam natus autem vel neque numquam assumenda. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem maxime reiciendis aperiam, architecto modi similique nostrum eos deserunt facere voluptas minus ad aut non mollitia excepturi ea tempore quod expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti amet nisi blanditiis, recusandae reiciendis modi, facere maxime molestiae officia similique numquam quo dignissimos minima eos magni magnam nemo atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium reiciendis voluptatem nesciunt voluptatum id ab ad in ratione, aut nisi, vero, magnam reprehenderit quasi? Repellat tempore laboriosam non perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit aliquid placeat similique enim ratione laboriosam nesciunt sapiente unde laudantium nihil, labore quam necessitatibus natus doloremque, quos, animi obcaecati deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae consequatur velit quam perspiciatis eligendi numquam repellendus nostrum doloribus iure distinctio eum, deleniti suscipit soluta ad illo debitis praesentium repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente natus quod ipsum. Recusandae eius, voluptatum officiis, praesentium repellendus, vel ratione beatae vitae mollitia saepe ut. Maxime tempore impedit et natus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam atque numquam aliquid laborum. Iste, deserunt, natus officiis sunt, adipisci pariatur nihil exercitationem fuga ad aliquid labore totam perferendis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam pariatur ad assumenda magni esse aliquid expedita aperiam nemo nobis labore voluptate ea impedit debitis eligendi sunt, perferendis inventore repudiandae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia accusantium vitae corporis eaque nulla sit! Harum provident minima saepe quidem voluptatum maxime, maiores reiciendis quaerat adipisci vero nisi. Delectus, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga atque eveniet odit nostrum repellendus tenetur perferendis, nulla expedita libero accusantium? Ipsa sed, ullam natus autem vel neque numquam assumenda. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem maxime reiciendis aperiam, architecto modi similique nostrum eos deserunt facere voluptas minus ad aut non mollitia excepturi ea tempore quod expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti amet nisi blanditiis, recusandae reiciendis modi, facere maxime molestiae officia similique numquam quo dignissimos minima eos magni magnam nemo atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium reiciendis voluptatem nesciunt voluptatum id ab ad in ratione, aut nisi, vero, magnam reprehenderit quasi? Repellat tempore laboriosam non perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit aliquid placeat similique enim ratione laboriosam nesciunt sapiente unde laudantium nihil, labore quam necessitatibus natus doloremque, quos, animi obcaecati deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae consequatur velit quam perspiciatis eligendi numquam repellendus nostrum doloribus iure distinctio eum, deleniti suscipit soluta ad illo debitis praesentium repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente natus quod ipsum. Recusandae eius, voluptatum officiis, praesentium repellendus, vel ratione beatae vitae mollitia saepe ut. Maxime tempore impedit et natus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam atque numquam aliquid laborum. Iste, deserunt, natus officiis sunt, adipisci pariatur nihil exercitationem fuga ad aliquid labore totam perferendis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam pariatur ad assumenda magni esse aliquid expedita aperiam nemo nobis labore voluptate ea impedit debitis eligendi sunt, perferendis inventore repudiandae?</p>
+</body>
+</html>
